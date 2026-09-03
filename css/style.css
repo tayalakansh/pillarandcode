@@ -354,7 +354,7 @@ textarea.input { min-height: 110px; resize: vertical; }
   }
   .nav-cta { display: none; }
   .hero { min-height: 0; flex-direction: column; align-items: stretch; }
-  .hero-art { position: relative; width: 100%; height: 260px; }
+  .hero-art { position: relative; inset: auto; width: 100%; height: 260px; }
   .hero-fade { display: none; }
   .hero-blob { display: none; }
   .hero-inner { padding: 40px 24px 56px; }
