@@ -367,4 +367,16 @@ textarea.input { min-height: 110px; resize: vertical; }
   .footer-bottom { padding: 20px 24px 32px; }
   .final-cta-panel { padding: 40px 26px; }
   .contact-panel { padding: 28px; }
+  .whatsapp-float { right: 16px; bottom: 16px; width: 52px; height: 52px; }
+  .whatsapp-float svg { width: 26px; height: 26px; }
 }
+
+/* ============================= whatsapp float ============================== */
+.whatsapp-float {
+  position: fixed; right: 28px; bottom: 28px; z-index: 65;
+  width: 58px; height: 58px; border-radius: 999px;
+  background: #25d366; display: flex; align-items: center; justify-content: center;
+  box-shadow: var(--shadow-lg); transition: transform .2s ease, box-shadow .2s ease;
+}
+.whatsapp-float:hover { transform: translateY(-3px) scale(1.04); box-shadow: 0 22px 50px rgba(28,27,26,.22); }
+.whatsapp-float svg { width: 30px; height: 30px; display: block; }
