@@ -82,7 +82,7 @@
         successState.focus();
       })
       .catch(function (err) {
-        hint.textContent = err.message || "Couldn't send that — please email inquiries@pillarandcode.com directly.";
+        hint.textContent = err.message || "Couldn't send that — please email contact@pillarandcode.com directly.";
         submitBtn.disabled = false;
       });
   });
