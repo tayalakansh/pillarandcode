@@ -207,7 +207,7 @@ textarea.input { min-height: 110px; resize: vertical; }
   pointer-events: none; background: var(--color-accent); opacity: .15; filter: blur(20px);
 }
 .hero-inner { position: relative; z-index: 2; max-width: var(--page-max); width: 100%; margin: 0 auto; padding: 100px 40px; }
-.hero-copy { max-width: min(600px, 46vw); }
+.hero-copy { max-width: min(600px, calc(46vw - 64px), calc(556px - 4vw)); }
 .hero-copy h1 { font-size: clamp(40px, 4.6vw, 64px); line-height: 1.02; margin: 18px 0 20px; text-wrap: pretty; }
 .hero-copy p.lede { font-size: 17.5px; line-height: 1.7; font-weight: 300; color: var(--color-neutral-700); max-width: 46ch; margin: 0 0 32px; }
 .hero-ctas { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
