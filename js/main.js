@@ -49,7 +49,7 @@
   var successState = document.getElementById('formSuccess');
   var hint = document.getElementById('formHint');
   var submitBtn = form.querySelector('button[type="submit"]');
-  var required = ['name', 'email'];
+  var required = ['name', 'email', 'phone'];
   var ENQUIRY_URL = 'https://casebench.in/pillarandcodeenquiry';
 
   form.addEventListener('submit', function (e) {
@@ -64,7 +64,7 @@
 
     var ok = required.every(function (k) { return (data.get(k) || '').trim().length > 1; });
     if (!ok) {
-      hint.textContent = 'Please give a name and an email address we can reply to.';
+      hint.textContent = 'Please give a name, email address, and phone number we can reach you on.';
       return;
     }
 
