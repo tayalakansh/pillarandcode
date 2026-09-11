@@ -80,10 +80,32 @@
         form.hidden = true;
         successState.hidden = false;
         successState.focus();
+        if (typeof gtag === 'function') {
+          gtag('event', 'conversion', {'send_to': 'AW-986755198/NncVCPjR7_McEP7gwtYD'});
+        }
       })
       .catch(function (err) {
         hint.textContent = err.message || "Couldn't send that — please email contact@casebench.in directly.";
         submitBtn.disabled = false;
       });
+  });
+})();
+
+(function adConversionClicks() {
+  var whatsapp = document.querySelector('.whatsapp-float');
+  if (whatsapp) {
+    whatsapp.addEventListener('click', function () {
+      if (typeof gtag === 'function') {
+        gtag('event', 'conversion', {'send_to': 'AW-986755198/X2C4CODz6fMcEP7gwtYD'});
+      }
+    });
+  }
+
+  document.querySelectorAll('a[href^="tel:"]').forEach(function (link) {
+    link.addEventListener('click', function () {
+      if (typeof gtag === 'function') {
+        gtag('event', 'conversion', {'send_to': 'AW-986755198/X2C4CODz6fMcEP7gwtYD'});
+      }
+    });
   });
 })();
